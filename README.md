@@ -1,53 +1,54 @@
-# rblxGame Project Documentation
+# Metin2-Inspired Game Documentation
 
-## Overview
-This README provides comprehensive documentation for the `rblxGame` project. It outlines the project structure, systems involved, and instructions for setting up the project.
+## Project Overview
+This project aims to create a Metin2-inspired MMORPG (Massively Multiplayer Online Role Playing Game) that immerses players in a vast fantasy world filled with adventures, challenges, and friendship.
 
-## Project Structure
+## Game Concept
+Players will embark on quests, battle mythical beasts, and interact with each other in a rich, persistent world.
 
+## Architecture
+- **Game Server**: Handles core game logic, player interactions, and data management.
+- **Client**: The user interface through which players interact with the game.
+
+## Game Systems
+- **Combat**: Real-time action combat system with character skills and abilities.
+- **Progression**: Experience points (XP) system to level up and unlock new skills.
+- **Inventory**: Item management system allowing players to collect, use, and trade items.
+- **Loot**: Randomized loot drops from enemies, fostering excitement and engagement.
+- **UI**: User-friendly interface design to enhance player experience.
+- **Networking**: Client-server architecture ensuring smooth real-time interactions.
+
+## Features Checklist
+- [ ] Character creation and customization
+- [ ] Quests system
+- [ ] Real-time combat mechanics
+- [ ] Player trading system
+- [ ] Guild system
+- [ ] Chat system
+
+## Complete Directory Structure
 ```
 /rblxGame
-├── /src          # Source code for the game
-│   ├── /game     # Game logic and mechanics
-│   ├── /assets   # Game assets (images, sounds, etc.)
-│   └��─ /ui       # User interface components
-├── /tests        # Unit and integration tests
-├── README.md     # Project documentation
-└── .gitignore    # Files to ignore in git
+├── /src
+│   ├── /client
+│   ├── /server
+│   └── /shared
+├── /assets
+│   ├── /images
+│   └── /sounds
+├── /docs
+└── README.md
 ```
 
-## Systems Overview
-- **Game Logic:**
-  - Contains all the mechanics that drive the gameplay, including character control, enemy AI, and game rules.
-- **Asset Management:**
-  - Handles loading and managing game assets, ensuring they are optimized for performance.
-- **User Interface:**
-  - Manages UI components such as menus, buttons, and HUD elements to improve user interaction.
-
 ## Setup Instructions
-To set up the `rblxGame` project, follow these steps:
+1. Clone the repository: `git clone https://github.com/Andrei-TC/rblxGame.git`
+2. Navigate into the directory: `cd rblxGame`
+3. Run the setup script: `sh setup.sh`
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Andrei-TC/rblxGame.git
-   cd rblxGame
-   ```
+## Development Guide
+- Follow the coding standards outlined in the `/docs/coding-standards.md`.
+- Regularly commit changes with clear messages.
 
-2. **Install dependencies:**
-   - Make sure you have Roblox Studio installed.
-   - Run the setup script to install all necessary dependencies. You can find the script in the `/src` folder.
-   ```bash
-   ./setup.sh
-   ```
-
-3. **Run the game:**
-   - Open Roblox Studio and load the main game file located in `/src/game/main.rbxl`.
-
-4. **Test the game:**
-   - Execute the tests located in the `/tests` folder to ensure everything is working correctly.
-   ```bash
-   ./test.sh
-   ```
-
-## Contributing
-If you would like to contribute to this project, please create a new branch for your feature or fix, and submit a pull request.
+## Contribution Guidelines
+- For contributions, please create a new branch and submit a Pull Request for review.
+- Ensure your code adheres to the project's coding standards.
